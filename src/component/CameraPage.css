@@ -1,0 +1,74 @@
+/* CameraPage.css */
+
+.camera-page {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center;
+  height: 100vh;
+  background-color: transparent; /* Set the background to transparent */
+  overflow: hidden;
+}
+
+.camera-top {
+  width: 100%;
+  text-align: center;
+  padding: 20px; /* Adjust the padding as needed */
+}
+
+.camera-bottom {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  flex-grow: 1; /* Allow the overlay to expand and fill the available space */
+  background: rgba(0, 0, 0, 0.7); /* Use rgba to set transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.punch-hole {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex; /* Center the content vertically and horizontally */
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  margin-top: 50%;
+}
+
+.round-image {
+  width: 250px; /* Adjust the width to your desired size */
+  height: 250px; /* Adjust the height to your desired size */
+  border-radius: 50%; /* Ensure it's a round shape */
+  object-fit: cover; /* Adjust how the image fits within the round area */
+}
+
+.hidden-input {
+  display: none;
+}
+
+.image-upload-button {
+  cursor: pointer;
+  padding: 20px; /* Increase the padding for a full-width button */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0; /* Remove border radius */
+  transition: background-color 0.3s;
+  width: 100%; /* Make the button full width */
+}
+
+.image-upload-button:hover {
+  background-color: #0056b3;
+}
